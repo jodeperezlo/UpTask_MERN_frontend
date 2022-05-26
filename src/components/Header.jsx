@@ -31,7 +31,7 @@ export const Header = () => {
 						<button
 							onClick={handleLogout}
 							type='button'
-							className='text-white text-sm bg-sky-600 p-3 rounded-md font-bold'
+							className='text-white text-sm bg-sky-600 p-3 rounded-md font-bold hover:bg-sky-700 transition-all 0.3s ease-in-out'
 						>
 							Cerrar sesión
 						</button>

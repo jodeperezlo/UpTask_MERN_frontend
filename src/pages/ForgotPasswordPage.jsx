@@ -36,24 +36,20 @@ const ForgotPasswordPage = () => {
 
 	return (
 		<>
-			<h2 className='text-sky-600 font-black text-4xl capitalize'>
-				Recupera tu acceso y no pierdas tus{' '}
-				<span className='text-slate-700'>proyectos</span>
+			<h2 className='text-sky-600 font-black text-4xl capitalize text-center md:text-left'>
+				Recupera tu acceso y no pierdas tus <span className='text-slate-700'>proyectos</span>
 			</h2>
 
 			<form className='my-5 bg-white shadow rounded-lg p-5' onSubmit={handleSubmit}>
 				<div className='my-2'>
-					<label
-						htmlFor='email'
-						className='text-gray-600 block text-lg font-semibold'
-					>
+					<label htmlFor='email' className='text-gray-600 block text-lg font-semibold'>
 						Correo electrónico
 					</label>
 					<input
 						id='email'
 						type='email'
 						placeholder='Escribe tu correo electrónico'
-						className='w-full m-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
+						className='w-full my-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>
@@ -69,10 +65,7 @@ const ForgotPasswordPage = () => {
 			</form>
 
 			<nav className='lg:flex lg:justify-between'>
-				<Link
-					to='/register'
-					className='block text-center mb-5 text-slate-500 text-sm'
-				>
+				<Link to='/register' className='block text-center mb-5 text-slate-500 text-sm'>
 					¿No tienes una cuenta? Regístrate gratis
 				</Link>
 				<Link to='/' className='block text-center mb-5 text-slate-500 text-sm'>

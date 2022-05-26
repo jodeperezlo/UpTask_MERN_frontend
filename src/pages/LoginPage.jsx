@@ -42,7 +42,7 @@ const LoginPage = () => {
 
 	return (
 		<>
-			<h2 className='text-sky-600 font-black text-4xl capitalize'>
+			<h2 className='text-sky-600 font-black text-4xl capitalize text-center md:text-left'>
 				Inicia sesión y administra tus <span className='text-slate-700'>proyectos</span>
 			</h2>
 
@@ -57,7 +57,7 @@ const LoginPage = () => {
 						id='email'
 						type='email'
 						placeholder='Escribe tu correo electrónico'
-						className='w-full m-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
+						className='w-full my-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>
@@ -70,7 +70,7 @@ const LoginPage = () => {
 						id='password'
 						type='password'
 						placeholder='Escribe tu contraseña'
-						className='w-full m-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
+						className='w-full my-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
 					/>

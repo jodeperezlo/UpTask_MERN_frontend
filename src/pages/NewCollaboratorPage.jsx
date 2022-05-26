@@ -43,7 +43,7 @@ const NewCollaboratorPage = () => {
 
 								<button
 									type='button'
-									className='flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full w-max text-md focus:outline-none focus:shadow-outline cursor-pointer transition-colors'
+									className='flex  items-center  bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-md focus:outline-none focus:shadow-outline cursor-pointer transition-colors'
 									onClick={() => addCollaborator(collaborator.email)}
 								>
 									<PlusCircleIcon className='w-4 h-4 mr-2' />

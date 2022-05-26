@@ -30,7 +30,7 @@ export const CollaboratorCard = ({ collaborator }) => {
 	};
 
 	return (
-		<div className='border-b p-5 flex flex-col sm:flex-row sm:justify-between gap-2 items-center'>
+		<div className='border-b p-5 flex flex-col gap-2 items-center text-center sm:text-left sm:flex-row sm:justify-between'>
 			<div>
 				<p className='font-semibold'>{username}</p>
 				<p className='text-sm text-gray-700'>{email}</p>

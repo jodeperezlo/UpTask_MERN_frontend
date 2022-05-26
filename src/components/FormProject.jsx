@@ -30,7 +30,7 @@ export const FormProject = () => {
 
 		if ([projectname, description, dateToBeCompleted, customer].includes('')) {
 			showAlert({
-				msg: 'Llene todos los campos para poder guardar el proyecto',
+				msg: 'Llena todos los campos para poder guardar el proyecto',
 				error: true,
 			});
 			return;
@@ -100,13 +100,13 @@ export const FormProject = () => {
 				/>
 			</div>
 
+			{msg && <Alert alert={alert} />}
+
 			<input
 				type='submit'
 				value={id ? 'Guarda los cambios' : 'Guarda el proyecto'}
 				className='bg-sky-600 hover:bg-sky-700 w-full font-bold text-white py-2 px-4 rounded cursor-pointer transition-colors'
 			/>
-
-			{msg && <Alert alert={alert} />}
 		</form>
 	);
 };

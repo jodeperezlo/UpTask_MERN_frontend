@@ -61,24 +61,20 @@ const RegisterPage = () => {
 
 	return (
 		<>
-			<h2 className='text-sky-600 font-black text-4xl capitalize'>
-				Crea tu cuenta y administra tus{' '}
-				<span className='text-slate-700'>proyectos</span>
+			<h2 className='text-sky-600 font-black text-4xl capitalize text-center md:text-left'>
+				Crea tu cuenta y administra tus <span className='text-slate-700'>proyectos</span>
 			</h2>
 
 			<form className='my-5 bg-white shadow rounded-lg p-5' onSubmit={handleSubmit}>
 				<div className='my-2'>
-					<label
-						htmlFor='name'
-						className='text-gray-600 block text-lg font-semibold'
-					>
+					<label htmlFor='name' className='text-gray-600 block text-lg font-semibold'>
 						Nombre completo
 					</label>
 					<input
 						id='name'
 						type='text'
 						placeholder='Escribe tu nombre completo'
-						className='w-full m-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
+						className='w-full my-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
 						value={username}
 						onChange={(e) => {
 							setUserName(e.target.value);
@@ -87,17 +83,14 @@ const RegisterPage = () => {
 					/>
 				</div>
 				<div className='my-2'>
-					<label
-						htmlFor='email'
-						className='text-gray-600 block text-lg font-semibold'
-					>
+					<label htmlFor='email' className='text-gray-600 block text-lg font-semibold'>
 						Correo electrónico
 					</label>
 					<input
 						id='email'
 						type='email'
 						placeholder='Escribe tu correo electrónico'
-						className='w-full m-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
+						className='w-full my-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
 						value={email}
 						onChange={(e) => {
 							setEmail(e.target.value);
@@ -106,17 +99,14 @@ const RegisterPage = () => {
 					/>
 				</div>
 				<div className='my-2'>
-					<label
-						htmlFor='password'
-						className='text-gray-600 block text-lg font-semibold'
-					>
+					<label htmlFor='password' className='text-gray-600 block text-lg font-semibold'>
 						Contraseña
 					</label>
 					<input
 						id='password'
 						type='password'
 						placeholder='Escribe tu contraseña'
-						className='w-full m-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
+						className='w-full my-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
 						value={password}
 						onChange={(e) => {
 							setPassword(e.target.value);
@@ -135,7 +125,7 @@ const RegisterPage = () => {
 						id='passwordConfirm'
 						type='password'
 						placeholder='Escribe de nuevo tu contraseña'
-						className='w-full m-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
+						className='w-full my-3 p-3 border rounded-lg text-gray-700 bg-gray-50'
 						value={passwordConfirm}
 						onChange={(e) => {
 							setPasswordConfirm(e.target.value);
@@ -157,10 +147,7 @@ const RegisterPage = () => {
 				<Link to='/' className='block text-center mb-5 text-slate-500 text-sm'>
 					¿Ya tienes una cuenta? Inicia sesión
 				</Link>
-				<Link
-					to='/forgot-password'
-					className='block text-center mb-5 text-slate-500 text-sm'
-				>
+				<Link to='/forgot-password' className='block text-center mb-5 text-slate-500 text-sm'>
 					¿Olvidaste tu contraseña? Recupérala aquí
 				</Link>
 			</nav>

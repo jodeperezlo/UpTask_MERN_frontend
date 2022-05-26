@@ -394,6 +394,7 @@ const ProjectsProvider = ({ children }) => {
 	};
 
 	const addCollaborator = async (email) => {
+		setLoading(true);
 		try {
 			const token = localStorage.getItem('token');
 			if (!token) return;
@@ -438,6 +439,8 @@ const ProjectsProvider = ({ children }) => {
 			setTimeout(() => {
 				setAlert({});
 			}, 4000);
+		} finally {
+			setLoading(false);
 		}
 	};
 

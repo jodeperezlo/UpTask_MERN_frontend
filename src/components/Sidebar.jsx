@@ -12,7 +12,7 @@ export const Sidebar = () => {
 
 				<Link
 					to='/projects/create-project'
-					className='bg-sky-600 w-full p-2 text-white font-bold block mt-5 text-center rounded-md'
+					className='bg-sky-600 w-full p-2 text-white font-bold block mt-5 text-center rounded-md hover:bg-sky-700 transition-all 0.3s ease-in-out'
 				>
 					Crea un nuevo proyecto
 				</Link>

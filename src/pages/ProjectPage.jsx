@@ -67,8 +67,6 @@ const ProjectPage = () => {
 		});
 	});
 
-	if (loading) return <Pulse />;
-
 	return (
 		<>
 			<div className='lg:flex justify-between'>
@@ -81,6 +79,14 @@ const ProjectPage = () => {
 					</div>
 				)}
 			</div>
+
+			{loading && (
+				<>
+					<Pulse />
+					<Pulse />
+					<Pulse />
+				</>
+			)}
 
 			{admin && (
 				<>
