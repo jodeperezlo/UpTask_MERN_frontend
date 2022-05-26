@@ -28,7 +28,7 @@ const AuthProvider = ({ children }) => {
 				const { data } = await clientAxios(`/users/profile`, configRequest);
 				setAuth(data);
 				const lastPath = localStorage.getItem('lastPath') || '/projects';
-				navigate(lastPath);
+				navigate(lastPath, { replace: true });
 			} catch (error) {
 				setAuth({});
 			} finally {

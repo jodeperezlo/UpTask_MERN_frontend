@@ -92,7 +92,7 @@ const ProjectsProvider = ({ children }) => {
 				return new Date(a.dateToBeCompleted) - new Date(b.dateToBeCompleted);
 			});
 			setProjects(orderedProjects);
-			navigate(`projects/${project.id}`);
+			navigate(`projects/${project.id}`, { replace: true });
 		} catch (error) {
 			setAlert({
 				msg: 'Hubo un error al crear el proyecto. Intenta nuevamente por favor',
@@ -128,7 +128,7 @@ const ProjectsProvider = ({ children }) => {
 			});
 			setTimeout(() => {
 				setAlert({});
-				navigate(`/projects`);
+				navigate(`/projects`, { replace: true });
 			}, 3000);
 		} catch (error) {
 			setAlert({
@@ -158,7 +158,7 @@ const ProjectsProvider = ({ children }) => {
 			setProject(data);
 			setAlert({});
 		} catch (error) {
-			navigate(`/projects`);
+			navigate(`/projects`, { replace: true });
 			setAlert({
 				msg: error.response.data.msg,
 				error: true,
@@ -199,7 +199,7 @@ const ProjectsProvider = ({ children }) => {
 				iconColor: config.VITE_SUCCESS_COLOR,
 				confirmButtonColor: config.VITE_SUCCESS_COLOR,
 			});
-			navigate(`/projects`);
+			navigate(`/projects`, { replace: true });
 		} catch (error) {
 			Swal.fire({
 				icon: 'warning',

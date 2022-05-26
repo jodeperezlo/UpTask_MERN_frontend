@@ -3,6 +3,7 @@ import React from 'react';
 import { FormProject } from '../components/FormProject';
 
 const NewProjectPage = () => {
+	localStorage.setItem('lastPath', `/projects/create-project`);
 	return (
 		<div>
 			<h1 className='text-2xl font-black'>Nuevo proyecto</h1>
